@@ -3,7 +3,7 @@
 <asp:Content runat="server" ID="Main" ContentPlaceHolderID="MainContent">
 Transfered <%= ViewData["Amount"] %> from <%= ViewData["Source"] %> to <%= ViewData["Destination"] %>
 <p>
- <a href="../TransferMoney/" title="">Do another transfer...</a><br /> 
- <a href="../AccountOverview">Overview of accounts</a>
+<%: Html.ActionLink("Do another transfer...", controllerName:"TransferMoney", actionName:"SelectSource" )%><br />
+<%: Html.ActionLink("Overview of accounts", controllerName:"AccountOverview", actionName:"Index") %>
 </p>
 </asp:Content>

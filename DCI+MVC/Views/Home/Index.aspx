@@ -7,7 +7,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <h2>My silly little bank</h2>
     <p>
-         <a href="../TransferMoney/" title="">Transfer money</a><br />
-         <a href="../AccountOverview/">Overview of accounts</a>
+         <%: Html.ActionLink("Transfer money", controllerName:"TransferMoney", actionName:"SelectSource" )%><br />
+         <%: Html.ActionLink("Overview of accounts", controllerName:"AccountOverview", actionName:"Index") %>
     </p>
 </asp:Content>

@@ -81,8 +81,11 @@
   <ItemGroup>
     <Content Include="Global.asax" />
     <Content Include="Views\AccountOverview\index.aspx" />
+    <Content Include="Views\TransferMoney\SelectAmount.aspx" />
+    <Content Include="Views\TransferMoney\SelectDestination.aspx" />
     <Content Include="Views\TransferMoney\Index.aspx" />
     <Content Include="Views\TransferMoney\Result.aspx" />
+    <Content Include="Views\TransferMoney\SelectSource.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

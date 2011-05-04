@@ -7,9 +7,14 @@ namespace DCI_MVC.Contexts.MoneyTransfer
 {
     public class TransferMoneyContext
     {
-        public TransferMoneySource Source { get; private set; }
-        public TransferMoneySink Sink { get; private set; }
-        public decimal Amount { get; private set; }
+        public TransferMoneySource Source { get;  set; }
+        public TransferMoneySink Sink { get; set; }
+        public decimal Amount { get; set; }
+
+        public TransferMoneyContext()
+        {
+            
+        }
 
         public TransferMoneyContext(TransferMoneySource source, TransferMoneySink sink, decimal amount)
         {
